@@ -35,7 +35,7 @@ const Header = () => {
             </defs>
           </svg>
           <a href="#about">About me</a>
-          <a href="#experience">Projects</a>
+          <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
