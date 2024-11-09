@@ -1,3 +1,4 @@
+import Hero from './components/Hero';
 import styles from './styles/App.module.css';
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
       hello
       <div id="sections-container" className={styles.sectionsContainer}>
         <section id="hero" className={styles.sectionBlack}>
-          Hero
+          <Hero />
         </section>
         <section id="about">About</section>
         <section id="experience" className={styles.sectionBlack}>
