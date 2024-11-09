@@ -1,11 +1,14 @@
+import Header from './components/Header';
 import Hero from './components/Hero';
 import styles from './styles/App.module.css';
+import clsx from 'clsx';
 
 function App() {
   return (
     <div id="main-container" className={styles.mainContainer}>
-      {/* Header */}
-      hello
+      <header className={clsx(styles.sectionBlack, styles.header)}>
+        <Header />
+      </header>
       <div id="sections-container" className={styles.sectionsContainer}>
         <section id="hero" className={styles.sectionBlack}>
           <Hero />
