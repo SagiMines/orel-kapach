@@ -83,7 +83,7 @@ const Hero = () => {
       <div className={styles.logoContainer}>
         <svg
           width="600"
-          height="745"
+          height="600"
           viewBox="0 0 914 745"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
