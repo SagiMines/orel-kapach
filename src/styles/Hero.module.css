@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.heroContainer {
+  display: flex;
+  padding: 0 150px;
+  padding-top: 120px;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Assistant', sans-serif;
+  align-items: center;
+  max-width: 1000px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.firstTextContainer {
+  display: flex;
+  justify-content: center;
+}
+.firstTextContainer > div {
+  position: relative;
+  width: fit-content;
+}
+.firstTextContainer > div > div {
+  position: absolute;
+  bottom: -30px;
+}
+
+.firstTextContainer > div > h1 {
+  font-size: 60px;
+  margin: 0;
+  font-weight: 700;
+  height: 70px;
+  text-align: center;
+}
+
+.firstTextContainer > div > div > p {
+  font-size: 22px;
+  font-weight: 10;
+  opacity: 0.8;
+  margin: 0;
+  padding-left: 3px;
+}
+
+.secondTextContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 60px;
+  text-align: center;
+}
+
+.secondTextContainer > div {
+  position: relative;
+  height: 190px;
+}
+
+.secondTextContainer > p {
+  margin: 0;
+  max-width: 290px;
+}
+
+.secondTextContainer > div > div {
+  position: absolute;
+  top: -40px;
+  left: -100px;
+}
+
+.secondTextContainer > div {
+  align-self: center;
+}
+
+@media only screen and (max-width: 1150px) {
+  .heroContainer {
+    flex-direction: column-reverse;
+  }
+
+  .textContainer {
+    gap: 40px;
+    padding-bottom: 50px;
+  }
+
+  .heroContainer > .logoContainer > svg {
+    height: 500px;
+    margin-right: 37px;
+  }
+
+  .firstTextContainer > div > div {
+    left: 30px;
+  }
+}
