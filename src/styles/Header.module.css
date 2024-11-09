@@ -46,16 +46,20 @@
 }
 
 @media only screen and (max-width: 1150px) {
-  .secondSection {
+  .secondSection,
+  .firstSection > a[href='#experience'] {
     display: none;
   }
 
   .nav > div:first-child {
     width: fit-content;
+    padding-right: 8px;
   }
-
+  .firstSection {
+    gap: 15px;
+  }
   .firstSection > a {
     font-size: 18px;
-    width: 85px;
+    width: fit-content;
   }
 }
