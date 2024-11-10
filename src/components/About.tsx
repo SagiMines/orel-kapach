@@ -1,6 +1,7 @@
 import styles from './../styles/About.module.css';
 import PersonalPhotoSVG from '../svg/PersonalPhotoSVG';
 import AboutMeSVG from '../svg/AboutMeSVG';
+import BetweenHeroAndAboutSVG from '../svg/BetweenHeroAndAboutSVG';
 
 const About = () => {
   return (
@@ -32,8 +33,11 @@ const About = () => {
             technologies to deliver creative and up-to-date solutions tailored
             to clients' needs.
           </p>
-          <div>
+          <div className={styles.AboutMeSVG}>
             <AboutMeSVG />
+          </div>
+          <div className={styles.BetweenHeroAndAboutSVG}>
+            <BetweenHeroAndAboutSVG />
           </div>
         </div>
       </div>
