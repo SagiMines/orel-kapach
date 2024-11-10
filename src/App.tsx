@@ -1,7 +1,9 @@
+import About from './components/About';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import styles from './styles/App.module.css';
 import clsx from 'clsx';
+import BetweenHeroAndAboutSVG from './svg/BetweenHeroAndAboutSVG';
 
 function App() {
   return (
@@ -13,7 +15,12 @@ function App() {
         <section id="hero" className={styles.sectionBlack}>
           <Hero />
         </section>
-        <section id="about">About</section>
+        <section id="about" className={styles.aboutSection}>
+          <About />
+          <div className={styles.svgContainer}>
+            <BetweenHeroAndAboutSVG />
+          </div>
+        </section>
         <section id="experience" className={styles.sectionBlack}>
           Experience
         </section>
