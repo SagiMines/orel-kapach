@@ -5,9 +5,11 @@ body,
 #root {
   height: 100%;
   font-family: 'Assistant', sans-serif;
+  overflow-x: hidden;
 }
 
-#hero {
+#hero,
+#about {
   display: flex;
   justify-content: center;
 }
