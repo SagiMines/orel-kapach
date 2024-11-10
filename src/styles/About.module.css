@@ -32,13 +32,19 @@
   position: relative;
 }
 
-.textContainer > div > div {
+.textContainer > div > .AboutMeSVG {
   position: absolute;
   top: 90px;
   right: 10px;
 }
 
-.textContainer > div > div > svg {
+.textContainer > div > .BetweenHeroAndAboutSVG {
+  position: absolute;
+  top: -300px;
+  right: -250px;
+}
+
+.textContainer > div > .AboutMeSVG > svg {
   opacity: 0.8;
 }
 
@@ -63,6 +69,11 @@
     padding-left: 60px;
     padding-right: 0;
   }
+
+  .textContainer > div > .BetweenHeroAndAboutSVG {
+    top: -700px;
+    right: -450px;
+  }
 }
 
 @media only screen and (max-width: 950px) {
@@ -75,11 +86,11 @@
     max-width: 360px;
   }
 
-  .textContainer > div > div > svg {
+  .textContainer > div > .AboutMeSVG > svg {
     width: 380px;
   }
 
-  .textContainer > div > div {
+  .textContainer > div > .AboutMeSVG {
     right: 0;
     top: 150px;
   }
@@ -90,5 +101,15 @@
 
   .textContainer > div > p {
     font-size: 15px;
+  }
+
+  .textContainer > div > .BetweenHeroAndAboutSVG {
+    top: -550px;
+    right: -450px;
+  }
+
+  .textContainer > div > .BetweenHeroAndAboutSVG > svg {
+    width: 944px;
+    height: 413px;
   }
 }

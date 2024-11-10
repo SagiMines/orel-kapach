@@ -8,12 +8,6 @@
   position: relative;
 }
 
-.svgContainer {
-  position: absolute;
-  top: -100px;
-  right: -250px;
-}
-
 .mainContainer {
   width: 100%;
   height: 100%;
