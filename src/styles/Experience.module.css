@@ -1,0 +1,125 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 150px;
+  padding-bottom: 100px;
+  color: white;
+  max-width: 1000px;
+  position: relative;
+}
+
+.mainContainer > svg {
+  position: absolute;
+  top: 302px;
+  right: 0;
+}
+
+.titleContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.titleContainer > h1 {
+  font-size: 55px;
+}
+
+.dataContainer {
+  display: flex;
+  gap: 250px;
+}
+
+.firstInnerDataContainer,
+.secondInnerDataContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  flex: 1;
+}
+
+.secondInnerDataContainer {
+  gap: 20px;
+}
+
+.software {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.software > h2,
+.AiAndMore > h2,
+.experience > h2,
+.education > h2,
+.militaryService > h2 {
+  font-size: 45px;
+  margin: 0;
+  text-wrap: nowrap;
+}
+
+.AiAndMore > .AiAndMoreList,
+.experience > .experienceText > span,
+.education > .educationList,
+.militaryService > .militaryServiceText {
+  color: rgba(255, 244, 61, 1);
+  font-weight: 200;
+  font-size: 20px;
+  margin: 0;
+}
+
+.education > .educationList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.software > .softwareLogos {
+  display: flex;
+  gap: 15px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .dataContainer {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .titleContainer > h1 {
+    font-size: 35px;
+    text-wrap: nowrap;
+  }
+
+  .firstInnerDataContainer,
+  .secondInnerDataContainer {
+    align-items: center;
+    /* text-align: center; */
+  }
+
+  .experience,
+  .AiAndMore,
+  .education,
+  .militaryService {
+    width: 285px;
+  }
+
+  .experienceText > svg {
+    width: 308px;
+    height: 772px;
+  }
+
+  .militaryService > h2 {
+    text-wrap: wrap;
+    line-height: 45px;
+  }
+
+  .software > h2,
+  .AiAndMore > h2,
+  .experience > h2,
+  .education > h2,
+  .militaryService > h2 {
+    font-size: 30px;
+  }
+
+  .militaryService > .militaryServiceText {
+    margin-top: 10px;
+  }
+}
