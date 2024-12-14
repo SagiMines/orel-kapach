@@ -1,4 +1,5 @@
 import About from './components/About';
+import Experience from './components/Experience';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import styles from './styles/App.module.css';
@@ -18,7 +19,7 @@ function App() {
           <About />
         </section>
         <section id="experience" className={styles.sectionBlack}>
-          Experience
+          <Experience />
         </section>
         <section id="design" className={styles.sectionYellow}>
           Design
